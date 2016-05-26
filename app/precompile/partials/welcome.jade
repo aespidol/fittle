@@ -1,0 +1,17 @@
+#controller(ng-controller="workoutController as wc")
+	.row
+		.four.column
+			a(href = "#/edit")
+				button.button-primary Edit
+		.four.column
+			a(href = "#/create")
+				button Create
+	div(ng-repeat = "number in wc.workout track by $index")
+		h1 {{number}}
+		a(href = "#/detail")
+			button Detail
+	.row
+		.eight.column
+			8
+		.four.column
+			4
